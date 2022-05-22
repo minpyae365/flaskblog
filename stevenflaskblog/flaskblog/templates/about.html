@@ -1,0 +1,10 @@
+
+{% extends "layout.html" %}
+{% block content %}
+  <h1>About Page</h1>
+  {% if current_user.username %}
+    <p>{{ current_user.username }}</p>
+  {% else %}
+    <p> No logged in account! </p>
+  {% endif %}
+{% endblock content %}
